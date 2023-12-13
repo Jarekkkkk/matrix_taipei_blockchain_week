@@ -1,0 +1,12 @@
+[package]
+name = "protocol"
+version = "0.0.1"
+
+## devnet 0x0170d1568d3cddccce156b505863085a84365f694755aac29157fe7f462c17fd
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+Math = {local = "../libs/math"}
+
+[addresses]
+protocol = "0x0"
